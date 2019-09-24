@@ -2,7 +2,7 @@
 class Transfer
   attr_accessor :status, :all
   attr_reader :sender, :receiver, :amount
-  @@all = []
+  
   def initialize(sender, receiver, amount)
     @sender = sender
     @receiver = receiver 
@@ -32,7 +32,8 @@ class Transfer
   end 
   
   def reverse_transfer
-    
+    if self.status = "complete"
+      
   end 
   
 end
