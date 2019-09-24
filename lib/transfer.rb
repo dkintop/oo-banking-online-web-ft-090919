@@ -35,6 +35,7 @@ class Transfer
     if self.status = "complete"
       @sender.balance += @amount
       @receiver-= @amount
+    end
   end 
   
 end
